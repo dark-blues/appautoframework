@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试结果汇总</title>
+    <style>
+        .fail {
+            color: red;
+			width: 10em;
+			text-align: center;
+        }
+        .success {
+            color: green;
+			width: 10em;
+			text-align: center;
+        }
+		.details-col-elapsed {
+			width: 10em;
+			text-align: center;
+		}
+		.details-col-msg {
+			width: 10em;
+			text-align: center;
+			background-color:#66ffcc;
+		}
+
+    </style>
+</head>
+<body>
+<div>
+    <br>
+    <br>
+    <table border="thin" cellspacing="0" cellpadding="5" width="95%" align="center">
+        <tr colspan="4" bgcolor="#ffe4c4" style="font-size: 30px">
+            <td colspan="5" align="center">自动化测试报告</td>
+        </tr>
+        <tr align="center" style="font-size: 20px">
+            <td width="15%">执行总数：4</td>
+            <td width="15%">成功个数: 3</td>
+            <td width="15%">失败个数: 1</td>
+            <td width="20%">执行成功率: 75.0%</td>
+            <td width="35%">合计耗时: 24.9s</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table  border="thin" cellspacing="0" cellpadding="3"  width="95%" style="margin: auto;">
+        <tr class="" >
+            <th class='details-col-msg'>case中文名称</th>
+            <th class='details-col-msg'>case创建人</th>
+            <th class='details-col-msg'>执行结果</th>
+            <th class='details-col-msg'>开始时间</th>
+            <th class='details-col-msg'>执行时间</th>
+            <th class='details-col-msg'>详细信息</th>
+            <th class='details-col-msg'>作者</th>
+            <th class='details-col-msg'>case描述</th>
+            <th class='details-col-msg'>文件路径</th>
+        </tr>
+         
+        <tr >
+            <td class='details-col-elapsed'>排行榜</td>
+            <td class='details-col-elapsed'>赵柳</td>
+            <td class="success">成功 </td>
+            <td class='details-col-elapsed'>2020-10-26 09:47:38</td>
+            <td class='details-col-elapsed'>4.5s</td>
+            <td class='details-col-elapsed'><a href="http://10.10.10.172:5000/static\Report\index\排行榜.html" target="view_window">详细信息</a></td>
+            <td class='details-col-elapsed'>zs</td>
+            <td class='details-col-elapsed'>None</td>
+            <td class='details-col-elapsed'>D:\Pycharm\PythonProject\app29\TestCase\Index\testindex.py</td>
+        </tr>
+         
+        <tr >
+            <td class='details-col-elapsed'>歌单</td>
+            <td class='details-col-elapsed'>旺旺</td>
+            <td class="success">成功 </td>
+            <td class='details-col-elapsed'>2020-10-26 09:47:33</td>
+            <td class='details-col-elapsed'>4.3s</td>
+            <td class='details-col-elapsed'><a href="http://10.10.10.172:5000/static\Report\index\歌单.html" target="view_window">详细信息</a></td>
+            <td class='details-col-elapsed'>zs</td>
+            <td class='details-col-elapsed'>描述信息2</td>
+            <td class='details-col-elapsed'>D:\Pycharm\PythonProject\app29\TestCase\Index\testindex.py</td>
+        </tr>
+         
+        <tr >
+            <td class='details-col-elapsed'>每日推荐</td>
+            <td class='details-col-elapsed'>张三</td>
+            <td class="fail">失败 </td>
+            <td class='details-col-elapsed'>2020-10-26 09:47:17</td>
+            <td class='details-col-elapsed'>12.0s</td>
+            <td class='details-col-elapsed'><a href="http://10.10.10.172:5000/static\Report\index\每日推荐.html" target="view_window">详细信息</a></td>
+            <td class='details-col-elapsed'>zs</td>
+            <td class='details-col-elapsed'>描述信息</td>
+            <td class='details-col-elapsed'>D:\Pycharm\PythonProject\app29\TestCase\Index\testindex.py</td>
+        </tr>
+         
+        <tr >
+            <td class='details-col-elapsed'>私人FM</td>
+            <td class='details-col-elapsed'>李四</td>
+            <td class="success">成功 </td>
+            <td class='details-col-elapsed'>2020-10-26 09:47:29</td>
+            <td class='details-col-elapsed'>4.1s</td>
+            <td class='details-col-elapsed'><a href="http://10.10.10.172:5000/static\Report\index\私人FM.html" target="view_window">详细信息</a></td>
+            <td class='details-col-elapsed'>zs</td>
+            <td class='details-col-elapsed'>None</td>
+            <td class='details-col-elapsed'>D:\Pycharm\PythonProject\app29\TestCase\Index\testindex.py</td>
+        </tr>
+        
+
+    </table>
+</div>
+</body>
+</html>

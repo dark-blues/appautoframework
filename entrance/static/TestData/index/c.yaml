@@ -1,0 +1,23 @@
+-
+  casename : 每日推荐
+  casecreate : 张三
+  casedesc: 描述信息
+-
+  casename : 私人FM
+  picture : tpl1603158907858.png
+  record_pos : (0.002, 0.95)
+  assert_info : 成功播放
+  casecreate : 李四
+-
+  casename : 歌单
+  picture : tpl1603245934522.png
+  record_pos : (-0.088, -0.794)
+  assert_info : "歌单成功点击"
+  casecreate : 旺旺
+  casedesc: 描述信息2
+-
+  casename : 排行榜
+  picture : tpl1603246024246.png
+  record_pos : (-0.311, 0.283)
+  assert_info : "排行榜成功出现"
+  casecreate : 赵柳

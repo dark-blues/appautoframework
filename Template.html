@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试结果汇总</title>
+    <style>
+        .fail {
+            color: red;
+			width: 10em;
+			text-align: center;
+        }
+        .success {
+            color: green;
+			width: 10em;
+			text-align: center;
+        }
+		.details-col-elapsed {
+			width: 10em;
+			text-align: center;
+		}
+		.details-col-msg {
+			width: 10em;
+			text-align: center;
+			background-color:#66ffcc;
+		}
+
+    </style>
+</head>
+<body>
+<div>
+    <br>
+    <br>
+    <table border="thin" cellspacing="0" cellpadding="5" width="95%" align="center">
+        <tr colspan="4" bgcolor="#ffe4c4" style="font-size: 30px">
+            <td colspan="5" align="center">自动化测试报告</td>
+        </tr>
+        <tr align="center" style="font-size: 20px">
+            <td width="15%">执行总数：{{detail_info.sum}}</td>
+            <td width="15%">成功个数: {{detail_info.success_num}}</td>
+            <td width="15%">失败个数: {{detail_info.error_num}}</td>
+            <td width="20%">执行成功率: {{detail_info.percent}}</td>
+            <td width="35%">合计耗时: {{detail_info.sum_time}}s</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table  border="thin" cellspacing="0" cellpadding="3"  width="95%" style="margin: auto;">
+        <tr class="" >
+            <th class='details-col-msg'>case中文名称</th>
+            <th class='details-col-msg'>case创建人</th>
+            <th class='details-col-msg'>执行结果</th>
+            <th class='details-col-msg'>开始时间</th>
+            <th class='details-col-msg'>执行时间</th>
+            <th class='details-col-msg'>详细信息</th>
+            <th class='details-col-msg'>作者</th>
+            <th class='details-col-msg'>case描述</th>
+            <th class='details-col-msg'>文件路径</th>
+        </tr>
+        {% for r in report_data_list %} {# 【dict】 #}
+        <tr >
+            <td class='details-col-elapsed'>{{ r["case_zh"] }}</td>
+            <td class='details-col-elapsed'>{{ r["case_create"] }}</td>
+            <td class="{{'success' if r.test_result else 'fail' }}">{{ '成功' if r.test_result else '失败' }} </td>
+            <td class='details-col-elapsed'>{{ r.start_time }}</td>
+            <td class='details-col-elapsed'>{{ r.run_time }}s</td>
+            <td class='details-col-elapsed'><a href="{{ r.html_path }}" target="view_window">详细信息</a></td>
+            <td class='details-col-elapsed'>{{ r.author}}</td>
+            <td class='details-col-elapsed'>{{ r.case_desc }}</td>
+            <td class='details-col-elapsed'>{{ r.file_path }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+</div>
+</body>
+</html>

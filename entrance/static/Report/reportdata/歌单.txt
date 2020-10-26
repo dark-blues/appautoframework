@@ -1,0 +1,1 @@
+{"html_path": "http://10.10.10.172:5000/static\\Report\\index\\\u6b4c\u5355.html", "case_zh": "\u6b4c\u5355", "case_create": "\u65fa\u65fa", "author": "zs", "case_desc": "\u63cf\u8ff0\u4fe1\u606f2", "file_path": "D:\\Pycharm\\PythonProject\\app29\\TestCase\\Index\\testindex.py", "run_time": 4.3, "test_result": true, "start_time": "2020-10-26 09:47:33"}
